@@ -41,7 +41,7 @@ The only condition to run that byte code is for the machine to have a runtime en
 - A
 10. How to define constants in java?
 - static final datatype variable_name = constant;
-11. What is String? Is it primitive type?
+11. What is Stringk? Is it primitive type?
 - String is the reference type, but String is immutable, and the object is stored in the String constant pool in the heap
 12. How to check if a String is representing a number?
 ```
@@ -55,6 +55,7 @@ public static boolean isNumeric(String str) {
 }
 ```
 13. Write a program to implement the following activity diagram:
+
 ![img.png](img.png)
 - shown in 
 14. Write a program to merge two array of int.
