@@ -21,15 +21,43 @@ The only condition to run that byte code is for the machine to have a runtime en
 5. Is java case sensitive?
 - Java is a case-sensitive language, which means that the upper or lower case of letters in your Java programs matter. 
 
-6.What do the following key words do? static, final, public, private, void, null, package, Class, new
+6. What do the following key words do? static, final, public, private, void, null, package, Class, new
+- static: Indicates that a variable or method is a class method (rather than being limited to one particular object)
+- final: Indicates that a variable holds a constant value or that a method will not be overridden
+- public: An access specifier used for classes, interfaces, methods, and variables indicating that an item is accessible throughout the application (or where the class that defines it is accessible)
+- private: An access specifier indicating that a method or variable may be accessed only in the class it’s declared in
+- void: The void keyword in Java denotes that a method does not have a return type. However, even though a constructor method can never have a return type, it does not have the void keyword in its declaration.
+- null: In Java, null is a reserved word for literal values. The null is a literal that represents a null reference, one that does not refer to any object. It seems like a keyword, but actually, it is a literal similar to true and false.
+- package: Declares a Java package
+- class: Declares a new class
+- new: Creates new objects
+
 7. What is primitive type and reference type?
+- primitive type: there are 8 kinds of primitive type in Java: byte, char, short, int, long, double, float, boolean. Primitive type variables are directly pointing to the value not object, and storing values in the stack.
+- reference type: class, interface, array are reference types. Reference type variable points the memory where object is stored in the heap.
 8. Is parameter passed by value or reference?
+- All types are passed by value when calling a method.
 9. What is the output: System.out.println(1 > 0 : “A”:”B”);
+- A
 10. How to define constants in java?
+- static final datatype variable_name = constant;
 11. What is String? Is it primitive type?
+- String is the reference type, but String is immutable, and the object is stored in the String constant pool in the heap
 12. How to check if a String is representing a number?
+```
+public static boolean isNumeric(String str) { 
+  try {  
+    Integer.parseInteger(str);  
+    return true;
+  } catch(NumberFormatException e){  
+    return false;  
+  }  
+}
+```
 13. Write a program to implement the following activity diagram:
 ![img.png](img.png)
+- shown in 
 14. Write a program to merge two array of int.
+- shown in 
 15. Write a program to find the second largest number inside an array of int.
-
+- shown in 
