@@ -47,18 +47,20 @@ The only condition to run that byte code is for the machine to have a runtime en
 ```
 public static boolean isNumeric(String str) { 
   try {  
-    Integer.parseInteger(str);  
+    Integer.parseInt(str);  
     return true;
   } catch(NumberFormatException e){  
-    return false;  
+      System.err.println("'"+ str + "' is ILLEGAL String representation of an integer");
+      e.printStackTrace(); 
+      return false;
   }  
 }
 ```
 13. Write a program to implement the following activity diagram:
 
 ![img.png](img.png)
-- shown in 
+- shown in class Solution
 14. Write a program to merge two array of int.
-- shown in 
+- shown in class Solution1
 15. Write a program to find the second largest number inside an array of int.
-- shown in 
+- shown in class Solution2
