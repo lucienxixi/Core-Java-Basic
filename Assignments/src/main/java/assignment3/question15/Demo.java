@@ -1,20 +1,12 @@
 package assignment3.question15;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Demo {
     public void demo() {
         Solution solution = new Solution();
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 10);
         Map<String, Integer> map = new HashMap<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(10);
         map.put("a", 1);
         map.put("b", 2);
         map.put("c", 10);
