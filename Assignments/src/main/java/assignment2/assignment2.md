@@ -11,7 +11,7 @@
 - To create object of a class(to instantiate an object)
 5. What is the default value of local variable? What is the default value of instance variable?
 - The local variables are not initialized to any default values. We should
-  not use local variables with out initialization. Even the java compiler
+  not use local variables without initialization. Even the java compiler
   throws error.
 - The default value of instance variable: 
 ```java
@@ -31,12 +31,19 @@ char = \u0000
 7. The protected data can be accessed by subclasses or same package. True or false?
 - True
 8. What is immutable class?
+- Immutable class in java means that once an object is created, we cannot change its content. In Java, all the wrapper classes (like Integer, Boolean, Byte, Short) and String class is immutable.
+- immutable class：
+  final class，
+  private final fields，
+  no setter，
+  return deep copy of the collections for getter，
 
 9. What’s the difference between “==” and equals method?
 - "==" is the comparison operator, it can compare the value of the primitive data type, and compare the reference of the reference data type
 - equals method is the method in the Object class, it can only be used for comparing the reference data type. In default, it compares the reference, and we can override this method to compare the content of two objects. 
 10. What is wrapper class?
 - A Wrapper class is a class whose object wraps or contains primitive data types. When we create an object to a wrapper class, it contains a field and in this field, we can store primitive data types. In other words, we can wrap a primitive value into a wrapper class object.
+- Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes
 11. What is autoboxing?
 - Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes.
 12. StringBuilder is threadsafe but slower than StringBuffer, true or false?

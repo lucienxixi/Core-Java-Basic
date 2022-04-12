@@ -33,6 +33,7 @@
 - strictfp: A Java keyword is used to restrict the precision and rounding of floating-point calculations to ensure portability
 - transient: Specifies that a variable is not part of an object’s persistent state
 - volatile: This indicates that a variable may change asynchronously
+- default: after java8, interface is allowed to have the method that is implemented
 
 ### exception handling
 - try: Starts a block of code that will be tested for exceptions 
@@ -56,4 +57,5 @@
 - super: Refers to a class’s base class (used in a method or class constructor) 
 - this: Refers to the current object in a method or constructor 
 
-
+### others
+- enum: declare a special class
